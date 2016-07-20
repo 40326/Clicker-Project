@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="Clicker_Project.css">
+<title>Clicker Game</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+	$(function(){
+		$("#jump1").toggle();
+		$("#jump2").toggle();
+		$("#jump3").toggle();
+		var start=false;
+		var counter=0;
+		var increase = 1;
+		var increaseText=1;
+		var increase2_text = 1;
+		var increase3 = 100;
+		var increase3_text = 1;
+
+		$(".box").click(function(){
+			if(start==false){
+			counter = counter + increase;
+			start=true;
+			$(".Clicks").html("You've clicked "+counter+" times");
+			}else{
+				counter = counter + increase;
+				$(".Clicks").html("You've clicked "+counter+" times");
+			}
+		});
+		$(".shop_cookie").click(function(){
+			if(counter>=10){
+				counter = counter - 10;
+				$(".shop_cookie").html("Cookie $10, bought "+increaseText);
+				increase++;
+				increaseText++;
+				$(".Clicks").html("You've clicked "+counter+" times");
+				$("#jump1").show(function(){
+					$("#jump1").fadeOut("slow");
+				});
+				
+				}
+		});
+		$(".shop_potato").click(function(){
+			if(counter>=100){
+				counter = counter - 100;
+				$(".shop_potato").html("Potato $100, bought "+increase2_text);
+				increase += 10;
+				increase2_text++;
+				$(".Clicks").html("You've clicked "+counter+" times");
+				$("#jump2").show(function(){
+					$("#jump2").fadeOut("slow");
+				});
+
+				}
+		});
+		$(".shop_rice").click(function(){
+			if(counter>=1000){
+				counter = counter - 1000;
+				$(".shop_rice").html("Rice $1000, bought "+increase3_text);
+				increase += 100;
+				increase3_text++;
+				$(".Clicks").html("You've clicked "+counter+" times");
+				$("#jump3").show(function(){
+					$("#jump3").fadeOut("slow");
+				});
+				
+				}
+		});
+
+
+});
+</script>
+</head>
+<body>
+	<img class="box" src="https://lh3.ggpht.com/cgvbtpBknBOKkGaddXEtwjoVHcZff6ZMM1sKDTv2J7GLP_feCbOZ29_dVM3Ir_CNbg=w300">
+	<h1 class="Clicks">You've clicked 0 times</h1>
+	<h1 class="shop_cookie">Cookie $10</h1>
+	<h1 class="shop_potato">Potato $100</h1>
+	<h1 class="shop_rice">Rice $1000</h1>
+	<div id="jump1"><img src="https://media.giphy.com/media/l2JIeRIge5SQcpaP6/giphy.gif" alt="jump1" style="width:1216px;height:912px;"></div><br>
+	<div id="jump2"><img src="https://media.giphy.com/media/y3f3q90sqB1mM/giphy.gif" alt="jump2" style="width:608px;height:456px;"></div><br>
+	<div id="jump3"><img src="http://media3.giphy.com/media/EPHI62lD3MJOw/giphy.gif" alt="jump3" style="width:608px;height:456px;"></div><br>
+</body>
+</html>

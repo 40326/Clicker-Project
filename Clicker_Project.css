@@ -1,0 +1,70 @@
+.box{
+	margin:0px;
+	display:inline-block;
+	vertical-align: top
+}
+
+
+body {
+    background-image: url("https://media.giphy.com/media/d97OPMEimWGBi/giphy.gif" );
+    background-size:100%;
+    display:inline-block;
+	vertical-align: top
+}
+
+
+.Clicks{
+	color:blue;
+	background-color:black;
+	border-radius: 30px;
+	font-size:20px;
+	display:inline-block;
+	vertical-align: top
+}
+
+.shop_cookie{
+	background-image: url("http://vignette4.wikia.nocookie.net/cookieclicker/images/5/5a/PerfectCookie.png/revision/latest?cb=20130827014912");
+	background-size:auto 100%;
+	width:297px;
+	background-color:black;
+	color:lightgreen;
+
+}
+
+.shop_potato{
+	background-image: url("https://lh3.googleusercontent.com/-qRmDvvvSw70/V1JQ54e1lyI/AAAAAAAAAXs/INTs7fIUgug9O8UmuKeeUy9xJgE4TnkGw/w426-h409/Potato.png");
+	background-size:auto 100%;
+	width:305px;
+	background-color:black;
+	color:lightgreen;
+	
+}
+
+.shop_rice{
+	background-image: url("http://cache1.asset-cache.net/xt/560517895.jpg?v=1&g=fs1%7C0%7CEYM%7C17%7C895&s=1");
+	background-size: auto 100%;
+	width:295px;
+	color:lightgreen;
+}
+
+#jump1 img {
+	position:absolute;
+	top: 0px;
+	left: 300px;
+	z-index: 100;
+}
+
+#jump2 img {
+	position:absolute;
+	top: 200px;
+	left: 500px;
+	z-index: 100;
+}
+
+#jump3 img {
+	position:absolute;
+	top: 200px;
+	left: 500px;
+	z-index: 100;
+}
+
